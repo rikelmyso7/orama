@@ -53,7 +53,14 @@ header {
     margin-bottom: 15px;
 }
 
-.itu, .pdv {
+.itu {
+    width: auto;
+    height: auto;
+    max-width: 280px;
+    max-height: 180px;
+}
+
+.pdv {
     width: auto;
     height: auto;
     max-width: 280px;
@@ -135,7 +142,13 @@ footer {
         max-height: 150px;
     }
 
-    .itu, .pdv {
+    .itu {
+        width: auto;
+        height: auto;
+        max-width: 280px;
+        max-height: 180px;
+    }
+    .pdv {
         width: auto;
         height: auto;
         max-width: 280px;
