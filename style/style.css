@@ -46,6 +46,16 @@ header {
 }
 
 .itu {
+<<<<<<< HEAD
+=======
+    width: auto;
+    height: auto;
+    max-width: 280px;
+    max-height: 180px;
+}
+
+.pdv {
+>>>>>>> b81e260085e991cc5b89d817d6f1eca2a3a54888
     width: auto;
     height: auto;
     max-width: 280px;
@@ -152,7 +162,24 @@ footer {
         width: auto;
         height: auto;
         max-width: 250px;
+<<<<<<< HEAD
         max-height: 200px;
+=======
+        max-height: 150px;
+    }
+
+    .itu {
+        width: auto;
+        height: auto;
+        max-width: 280px;
+        max-height: 180px;
+    }
+    .pdv {
+        width: auto;
+        height: auto;
+        max-width: 280px;
+        max-height: 180px;
+>>>>>>> b81e260085e991cc5b89d817d6f1eca2a3a54888
     }
     
     .text h1 {
