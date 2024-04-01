@@ -13,7 +13,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
 }
 
 header {
@@ -22,19 +22,11 @@ header {
     text-align: center;
     padding: 20px 0;
     box-shadow: rgba(82, 143, 58, 1) 0px 8px 24px;
-    
 }
 
 .locations {
     background-color: #f4f4f4;
     padding: 20px 40px;
-}
-
-.img {
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    max-height: 200px;
 }
 
 .location {
@@ -53,11 +45,25 @@ header {
     margin-bottom: 15px;
 }
 
-.itu, .pdv {
+.itu {
     width: auto;
     height: auto;
     max-width: 280px;
     max-height: 180px;
+}
+
+.pdv {
+    width: auto;
+    height: auto;
+    max-width: 280px;
+    max-height: 180px;
+}
+
+.img {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
 }
 
 .text {
@@ -125,21 +131,28 @@ footer {
     .container {
         width: auto;
         margin: 0 auto;
-        padding: 20px 0px 0px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .itu {
+        width: auto;
+        height: auto;
+        max-width: 280px;
+        max-height: 180px;
+    }
+    
+    .pdv {
+        width: auto;
+        height: auto;
+        max-width: 280px;
+        max-height: 180px;
     }
 
     .img {
         width: auto;
         height: auto;
         max-width: 250px;
-        max-height: 150px;
-    }
-
-    .itu, .pdv {
-        width: auto;
-        height: auto;
-        max-width: 280px;
-        max-height: 180px;
+        max-height: 200px;
     }
     
     .text h1 {
