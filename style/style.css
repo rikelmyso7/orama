@@ -7,7 +7,13 @@
 
 /* Basic styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divide {
+    background-color: #60c03d;
+    width: auto;
+    height: 20%;
 }
 
 .container {
@@ -26,19 +32,24 @@ header {
 
 .locations {
     background-color: #f4f4f4;
-    padding: 20px 40px;
+    padding: 40px 0PX 40px 0PX;
 }
 
 .location {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    margin-top: 5%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centraliza horizontalmente */
     justify-content: center; /* Centraliza verticalmente */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.location .pdv {
+    margin-bottom: 0;
 }
 
 .location img {
@@ -66,6 +77,13 @@ header {
     max-height: 200px;
 }
 
+.sociais {
+    width: auto;
+    height: auto;
+    max-width: 45px;
+    max-height: 45px;
+}
+
 .text {
     position: relative;
     border-radius: 5px;
@@ -75,7 +93,7 @@ header {
     justify-content: center; /* Centraliza verticalmente */
 }
 
-.text h1 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -85,9 +103,10 @@ header {
     text-decoration: none;
     letter-spacing: .07em;
     text-align: center;
+    color: #151515;
 }
 
-.text p {
+p {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
@@ -117,6 +136,70 @@ footer {
     padding: 20px 0;
 }
 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 40px 0px;
+  }
+  
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 2s infinite;
+  }
+
 @media only screen and (max-width: 480px) {
     * {
       padding: 0;
@@ -126,12 +209,31 @@ footer {
 
     .location {
         margin-bottom: 15%;
+        margin-top: 15%;
+    }
+
+    .location .pdv {
+        margin-bottom: 0;
+    }
+
+    .locations {
+        background-color: #f4f4f4;
+        padding: 20px 0PX 20px 0PX;
     }
 
     .container {
         width: auto;
         margin: 0 auto;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 40px 20px 10px 20px;
     }
 
     .itu {
@@ -139,6 +241,13 @@ footer {
         height: auto;
         max-width: 280px;
         max-height: 180px;
+    }
+
+    .sociais {
+        width: auto;
+        height: auto;
+        max-width: 45px;
+        max-height: 45px;
     }
     
     .pdv {
@@ -155,19 +264,19 @@ footer {
         max-height: 200px;
     }
     
-    .text h1 {
+    h1 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-style: normal;
         line-height: 1.2em;
-        font-size: 1.15em;
+        font-size: 1.3em;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: .05em;
         text-align: center;
     }
     
-    .text p {
+    p {
         display: block;
         font-family: 'Montserrat', sans-serif;
         font-style: italic;
@@ -180,3 +289,4 @@ footer {
         text-align: center;
     }
 }
+  
